@@ -1,15 +1,12 @@
-{
-  "name": "gauads-backend-secure",
+
+  "name": "gauads-backend",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "generate-hash": "node -e \"const bcrypt = require('bcrypt'); bcrypt.hash('NiceTry', 10, function(err, hash) { if (err) { console.error('Error hashing password:', err); } else { console.log('Dein Passwort-Hash:\\n' + hash); } });\""
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "bcrypt": "^5.1.1",
-    "dotenv": "^16.3.1"
+    "cors": "^2.8.5"
   }
 }
